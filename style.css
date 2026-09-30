@@ -1,0 +1,57 @@
+/* =========================
+   STYLE GENERAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Fond nuit */
+    background: linear-gradient(
+        180deg,
+        #020617 0%,
+        #0f172a 60%,
+        #1e293b 100%
+    );
+
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* =========================
+   LUNE
+   ========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: #fff8d6;
+
+    top: 60px;
+    right: 100px;
+
+    box-shadow:
+        0 0 30px #fff8d6,
+        0 0 70px rgba(255, 248, 214, 0.5);
+
+    z-index: -1;
+}
+
+/* =========================
+   TITRE
+   ========================= */
+
+
